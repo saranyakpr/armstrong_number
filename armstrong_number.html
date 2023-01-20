@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>armstrong_number</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="resume.css">
+</head>
+<body>
+
+   <script>
+   
+        var number=prompt("enter 3 digit number")
+		    var sum=0
+			var num=number
+				
+			while(num>0){
+				var remainder=num%10;
+				sum=sum+(remainder*remainder*remainder);
+				num=parseInt(num/10)
+			}
+			if(sum==number){
+			    document.write("armstrong number")
+			}
+			else{
+                document.write("not armstrong number")
+			}
+   
+   
+   
+   </script>
+
+</body>
+</html>
